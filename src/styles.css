@@ -2,3 +2,9 @@
 body {
   background-color:whitesmoke;
 }
+div {
+  margin-right: 300px;
+  margin-left: 300px;
+  margin-top: auto;
+  margin-bottom: auto;
+}

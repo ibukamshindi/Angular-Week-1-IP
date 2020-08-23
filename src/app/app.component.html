@@ -6,11 +6,9 @@
         you can leave the author as anonymous, finally don't forget to vote for your favourite one.</p>
         <ul>
           <li *ngFor= 'let quote of quote'>
-            {{quote.id}}
-            {{quote.quote}}
-            {{quote.author}}
-            {{quote.submittedby}}
-            {{quote.date}}
+            {{quote.id}}   
+            {{quote.quote}}, {{quote.author}}
+            {{quote.submittedby}}, {{quote.date}}
 
           </li>
         </ul>

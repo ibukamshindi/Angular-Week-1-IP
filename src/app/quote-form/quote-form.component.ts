@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Quote} from '../quote'
+import { Quote } from '../quote';
 import { from } from 'rxjs';
 
 @Component({
@@ -11,7 +11,7 @@ export class QuoteFormComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit()  {
   }
 
 }

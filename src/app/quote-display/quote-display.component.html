@@ -8,7 +8,7 @@
           <li *ngFor= 'let quote of quote'>
             {{quote.id}}   
             {{quote.quote}}, {{quote.author}}
-            {{quote.submittedby}}, {{quote.date}}
+            <app-quote-detail [quote]='quote'></app-quote-detail>
           </li>
         </ul>
 </div>

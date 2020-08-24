@@ -1,1 +1,14 @@
-<p>quote-display works!</p>
+<div>
+  <h1>Wahenga Walinena</h1>
+    <p>Here you can find famous Kenyan sayings and quotes from those of 
+        old to contemporary ones. We also give you an opportunity 
+        to add one of your liking and if you are unaware of whom to attribute it to 
+        you can leave the author as anonymous, finally don't forget to vote for your favourite one.</p>
+        <ul>
+          <li *ngFor= 'let quote of quote'>
+            {{quote.id}}   
+            {{quote.quote}}, {{quote.author}}
+            {{quote.submittedby}}, {{quote.date}}
+          </li>
+        </ul>
+</div>

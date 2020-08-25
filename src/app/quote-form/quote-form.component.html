@@ -1,21 +1,19 @@
-<div>
-  <h2 class="text-center">Add Quote</h2>
-  <hr>
-  <form #quoteForm='ngForm'>
-    <div class="new">
+<div class="form">
+  <h2>Add Quote</h2>
+    <hr/>
+  <form #quoteForm="ngForm">
+    <div>
       <div class="form-group">
         <label for="quote">Quote</label>
-        <textarea class="form-control" id="Quote" rows="4" required></textarea>
+        <textarea class="form-control" id="Quote" rows="6" required></textarea>
       </div>
       <div class="form-group">
         <label for="author">Author</label>
-        <input type="text" required class="form-control" id="author" />
+        <input type="text" required class="form-control"  [(ngModel)]="newQuote.author" id="author" />
       </div>
       <div class="form-group">
-        <label for="complete">Submitted by</label>
+        <label for="complete">Submittedby</label>
         <input type="name" id="complete" required />
-        <label for="datesubmitted">Please pick a date</label>
-        <input type="date" id="submission" />
         <button type="submit">Add Quote</button>
       </div>
     </div>

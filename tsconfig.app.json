@@ -8,7 +8,7 @@
   "files": [
     "src/main.ts",
     "src/polyfills.ts",
-    "./src/app/Quote.ts"
+    "./src/app/quote.ts"
   ],
   "include": [
     "src/**/*.d.ts"

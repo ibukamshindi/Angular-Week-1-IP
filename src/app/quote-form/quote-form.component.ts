@@ -9,10 +9,10 @@ import { from } from 'rxjs';
 })
 export class QuoteFormComponent implements OnInit {
 
-  newQuote  = new Quote ();
+  newQuote = new Quote("","",""); 
   constructor() { }
 
-  ngOnInit()  {
+  ngOnInit()   {
   }
 
 }

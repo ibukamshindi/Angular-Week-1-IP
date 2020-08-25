@@ -7,14 +7,13 @@
     as anonymous, finally don't forget to vote for your favourite one.
   </p>
   <ul>
-    <li *ngFor="let quote of quote">
-      {{ quote.id }}
+    <li *ngFor="let quote of quotes">
       {{ quote.quote }}, {{ quote.author }}
       <app-quote-detail [quote]="quote"></app-quote-detail>
     </li>
   </ul>
-  <div class="row">
-    <div class="col-md-2">
+  <div >
+    <div>
       <app-quote-form></app-quote-form>
     </div>
   </div>

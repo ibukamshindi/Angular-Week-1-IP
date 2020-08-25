@@ -14,6 +14,11 @@ export class QuoteDisplayComponent implements OnInit {
       {quote: '"You do not respond to a mosquito bite with a hammer."',author: 'Patrick Lumumba',submittedby:'submitted by A.N. Other.'},
     ];
 
+    addNewQuote(quote){
+      let quoteLength = this.quotes.length;
+      quote.id = quoteLength+1;
+      this.quotes.push(quote)
+    }
   constructor() { }
 
   ngOnInit() {

@@ -8,13 +8,17 @@
   </p>
   <ul>
     <li *ngFor="let quote of quotes">
-      {{ quote.quote }}, {{ quote.author }}
+      {{ quote.quote }} {{ quote.author }}
+      <button (click) = "likeButtonClick ()">Like</button>{{numberOfLikes}}
+      <button (click) = "dislikeButtonClick ()">Dislike</button>{{numberOfDislikes}}
       <app-quote-detail [quote]="quote"></app-quote-detail>
     </li>
   </ul>
   <div >
     <div>
-      <app-quote-form (addQuote)= "addNewQuote ($event)"></app-quote-form>
+      <app-quote-form (addQuote)= "addNewQuote($event)"></app-quote-form>
+    </div>
+    <div> 
     </div>
   </div>
 </div>

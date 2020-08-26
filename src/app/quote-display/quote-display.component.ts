@@ -9,16 +9,34 @@ import { Quote } from '../quote';
 export class QuoteDisplayComponent implements OnInit {
 
     quotes:Quote[] = [
-      {quote: '"I would rather die than resign"',author: 'Amos Kimunya',submittedby:'submitted by Anonymous.'},
-      {quote:'"No matter where you are from, your dreams are valid"',author: 'Lupita Nyongo',submittedby:'submitted by Anonymous.'},
-      {quote: '"You do not respond to a mosquito bite with a hammer."',author: 'Patrick Lumumba',submittedby:'submitted by A.N. Other.'},
+      new Quote('"I would rather die than resign"','Amos Kimunya','submitted by Anonymous.'),
+      new Quote('"No matter where you are from, your dreams are valid"','Lupita Nyongo','submitted by Anonymous.'),
+      new Quote('"You do not respond to a mosquito bite with a hammer"','Patrick Lumumba','submitted by A.N. Other.'),
     ];
+
+    // addNewQuote(quote){
+    //   this.quotes.push(quote)
+    // }
+
+    numberOfLikes: number = 0;
+    numberOfDislikes: number = 0;
+
+    likeButtonClick() {
+      this.numberOfLikes++;
+    }
+
+    dislikeButtonClick() {
+      this.numberOfDislikes++;
+    }
 
     addNewQuote(quote){
       let quoteLength = this.quotes.length;
       quote.id = quoteLength+1;
-      this.quotes.push(quote)
+      let quoteObject = new Quote(quote.quote, quote.author,quote.submittedby);
+      
+      this.quotes.push(quoteObject)
     }
+
   constructor() { }
 
   ngOnInit() {

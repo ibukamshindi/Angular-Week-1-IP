@@ -18,7 +18,7 @@ At the moment there are no known issues.
 The project made us of Angular  classes, components and forms.
 ## Support and contact details
 If you want to contact me reach me at 123@gmail.com
-## Link to live site: 
+## Link to live site: https://ibukamshindi.github.io/Angular-Week-1-IP/
 https:
 ## License [MIT license](https://opensource.org/licenses/MIT)
 ## (c) 2020 Ibukamshindi

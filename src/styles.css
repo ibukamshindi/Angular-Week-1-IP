@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
 body {
-  background-color:whitesmoke;
+  background-color: whitesmoke;
+  font-family: 'Lato', sans-serif;
 }
 div {
   margin-right: 400px;
@@ -11,6 +13,14 @@ div {
 }
 .form{
   margin-left: -800px;
+}
+.button1{
+  border-radius:12px;
+  background-color:turquoise;
+}
+.button2{
+  border-radius:12px;
+  background-color:palevioletred;
 }
 
 

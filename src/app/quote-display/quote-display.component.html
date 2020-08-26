@@ -9,9 +9,10 @@
   <ul>
     <li *ngFor="let quote of quotes">
       {{ quote.quote }} {{ quote.author }}
-      <button (click) = "likeButtonClick ()">Like</button>{{numberOfLikes}}
-      <button (click) = "dislikeButtonClick ()">Dislike</button>{{numberOfDislikes}}
+      
       <app-quote-detail [quote]="quote"></app-quote-detail>
+      <button class = "button1" (click) = "likeButtonClick ()">Like</button>{{numberOfLikes}}
+      <button class = "button2" (click) = "dislikeButtonClick ()">Dislike</button>{{numberOfDislikes}}
     </li>
   </ul>
   <div >

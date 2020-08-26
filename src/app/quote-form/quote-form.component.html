@@ -1,26 +1,42 @@
 <div class="form">
   <h2>Add Quote</h2>
-    <hr/>
-  <form (ngSubmit)='submitQuote(quoteForm)' #quoteForm='ngForm'>
-    
-    <div class="form-group">
-      <label for="quote">Quote</label>
-      <textarea class="form-control" id="quote" name="quote" rows="6" required [(ngModel)]="newQuote.quote" #quote = 'ngModel' ></textarea>
-      
-      Display {{newQuote.quote}}
-
-    </div>
-    <div class="form-group">
-      <label for="author">Author</label>
-      <input type="text" required class="form-control" id= "author" name="author" [(ngModel)]="newQuote.author" #author = 'ngModel'/>
-    </div>
-    <div class="form-group">
-      <label for="complete">Submittedby</label>
-      <input type="text" id="submittedby" required  name="submittedby" [(ngModel)]="newQuote.submittedby" #submittedby = 'ngModel' />
-      
-    </div>
-      
-    
+  <hr />
+  <form (ngSubmit)="submitQuote(quoteForm)" #quoteForm="ngForm">
+    <label for="quote">Quote</label>
+    <br /><br />
+    <textarea
+      class="form-control"
+      id="quote"
+      name="quote"
+      rows="6"
+      required
+      [(ngModel)]="newQuote.quote"
+      #quote="ngModel"
+    ></textarea>
+    <br />
+    <label for="author">Author</label>
+    <br />
+    <input
+      type="text"
+      required
+      class="form-control"
+      id="author"
+      name="author"
+      [(ngModel)]="newQuote.author"
+      #author="ngModel"
+    />
+    <br /><br />
+    <label for="complete">Submittedby</label>
+    <br />
+    <input
+      type="text"
+      id="submittedby"
+      required
+      name="submittedby"
+      [(ngModel)]="newQuote.submittedby"
+      #submittedby="ngModel"
+    />
+    <br /><br />
     <button type="submit">Add Quote</button>
   </form>
 </div>
